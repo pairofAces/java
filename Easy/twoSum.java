@@ -18,5 +18,8 @@ class Program{
                 }
             }
         }
+        // if there were no integers that summed to the targetSum
+        // return 0
+        return new int[0];
     }
 }
