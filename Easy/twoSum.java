@@ -13,7 +13,9 @@ class Program{
             // initiate nested for loop with a second pointer
             for(int j = i + 1; j < array.length; j++) {
                 int secondNum = array[j];
-                
+                if (firstNum + secondNum == targetSum) {
+                    return new int[] {firstNum, secondNum};
+                }
             }
         }
     }
