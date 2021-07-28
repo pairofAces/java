@@ -7,5 +7,15 @@
 class Program {
     public static void main(String[] args) {
         // initiate starting variables
+            // int num is just an example for now
+        int num = 371, originalNum, remainder, result = 0;
+
+        // set originalNum equal to the input num
+        originalNum = num;
+
+        while (originalNum != 0) {
+            
+        }
+
     }
 }
