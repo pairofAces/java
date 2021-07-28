@@ -30,5 +30,13 @@ class Program {
             originalNum /= 10;
         }
 
+        // implement if loop logic to check if the result variable is equal
+        // to the input number
+        if (result == num) {
+            System.out.println(num + " is an armstrong number");
+        } else {
+            System.out.println(num + " is not an armstrong number");
+        }
+
     }
 }
