@@ -14,7 +14,20 @@ class Program {
         originalNum = num;
 
         while (originalNum != 0) {
-            
+            // the remainder will be the last digit of the originalNum
+            // at each iteration of the while loop
+            remainder = originalNum % 10;
+
+            // create a variable that represents the length of the input num
+            int length = (int) (Math.log10(num) + 1);
+
+            // the result will be incremented by the value of the remainder
+            // to the power of the length of the input number
+            result += Math.pow(remainder, length);
+
+            // the originalNum will be divided by 10, to take the last digit 
+            // out and concentrate on the remaining digits of the input number
+            originalNum /= 10;
         }
 
     }
