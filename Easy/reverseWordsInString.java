@@ -18,9 +18,18 @@ class Program {
             // initate nested for loop to iterate over the single word
             // and add it into the reversedWord variable
             for (int j = word.length() - 1; j >= 0; j--) {
-                
+                reversedWord = reversedWord + word.charAt(j);
             }
-
+            // now add the reversedWord into the reversed variable, after 
+            // getting out of the nested for loop
+            reversed = reversed + reversedWord + " ";
         }
+
+        // output the reversed variable
+        System.out.println(reversed);
+    }
+
+    public static void main (String[] args) {
+        
     }
 }
