@@ -30,6 +30,8 @@ class Program {
     }
 
     public static void main (String[] args) {
-        
+        Example obj = new Example();
+
+        obj.reverseWordInString("This is an example input for the code");
     }
 }
