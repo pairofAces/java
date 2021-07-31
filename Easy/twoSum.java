@@ -32,6 +32,14 @@ class Program{
 
 class Program{
     public static int[] twoNumberSum(int[] array, int targetSum) {
-        
+        // create a new set to act as a hash set that will store the
+        // numbers we've tried out
+        Set<Integer> nums = new HashSet<>();
+
+        // use a for loop, traverse through the array
+        for (int num: array) {
+            
+        }
+
     }
 }
