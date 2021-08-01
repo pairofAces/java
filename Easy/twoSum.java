@@ -38,7 +38,14 @@ class Program{
 
         // use a for loop, traverse through the array
         for (int num: array) {
-            
+            // create variable to represent the potential match
+            int potentialMatch = targetSum - num;
+
+            // initiate if loop to check if the hashset created earlier
+            // contains the potentialMatch
+            if (nums.contains(potentialMatch)) {
+                
+            }
         }
 
     }
