@@ -54,6 +54,8 @@ class Program{
                 nums.add(num);
             }
         }
-
+        // if the loop is done, and the numbers weren't found
+        // return a 0
+        return new int[0];
     }
 }
