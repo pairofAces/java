@@ -44,7 +44,14 @@ class Program{
             // initiate if loop to check if the hashset created earlier
             // contains the potentialMatch
             if (nums.contains(potentialMatch)) {
-                
+                // if it is contained in the hashset
+                // return an array of the current number and the 
+                // potentialMatch
+                return new int[] {potentialMatch, num};
+            } else {
+                // else add the current number to the hashset for
+                // future reference
+                nums.add(num);
             }
         }
 
