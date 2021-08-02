@@ -59,3 +59,9 @@ class Program{
         return new int[0];
     }
 }
+
+class Solution3 {
+    public static int[] twoNumberSum(int[] array, int targetSum) {
+        
+    }
+}
