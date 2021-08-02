@@ -62,6 +62,19 @@ class Program{
 
 class Solution3 {
     public static int[] twoNumberSum(int[] array, int targetSum) {
-        
+        // initially sort the array
+        Arrays.sort(array);
+
+        // create two pointer variables
+            // one starting at the beginning of the sorted array
+            // the other starting at the end
+        int left = 0;
+        int right = array.length - 1;
+
+        // generate while loop
+            // while the left pointer is less than the value of the right pointer
+        while (left < right) {
+
+        }
     }
 }
