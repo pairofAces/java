@@ -74,7 +74,19 @@ class Solution3 {
         // generate while loop
             // while the left pointer is less than the value of the right pointer
         while (left < right) {
+            // create a variable to represent the current sum of the
+            // elements at the (left) and (right) indices
+            int currentSum = array[left] + array[right];
 
+            // initiate if statement to check if the currentSum is
+            // equal to the targetSum
+            if (currentSum == targetSum) {
+
+            } else if (currentSum < targetSum) {
+
+            } else if (currentSum > targetSum) {
+                
+            }
         }
     }
 }
