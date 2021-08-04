@@ -81,11 +81,13 @@ class Solution3 {
             // initiate if statement to check if the currentSum is
             // equal to the targetSum
             if (currentSum == targetSum) {
-
+                // return a new array of the elements at the
+                // (left) and (right) indices
+                return new int[] {array[left], array[right]};
             } else if (currentSum < targetSum) {
 
             } else if (currentSum > targetSum) {
-                
+
             }
         }
     }
