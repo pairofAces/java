@@ -91,8 +91,13 @@ class Solution3 {
                 // closer to the target
                 left++;
             } else if (currentSum > targetSum) {
-                
+                // if the currentSum is larger is than the target,
+                // the right pointer needs to be decremented so that the
+                // value of currentSum is closer to the value of the target
+                right--;
             }
         }
+        // if the two integers are not found, return 0
+        return new int[0]
     }
 }
