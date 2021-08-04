@@ -85,9 +85,13 @@ class Solution3 {
                 // (left) and (right) indices
                 return new int[] {array[left], array[right]};
             } else if (currentSum < targetSum) {
-
+                // if the currentSum is less than the target,
+                // the left pointer needs to be incremented
+                // and increase the value of currentSum so it can be
+                // closer to the target
+                left++;
             } else if (currentSum > targetSum) {
-
+                
             }
         }
     }
