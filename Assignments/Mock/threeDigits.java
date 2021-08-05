@@ -31,3 +31,28 @@ public class threeDigits {
     }
     
 }
+
+
+// Richards solution below
+public class threeDigits {
+    public static void main(String[] args) {
+        int max = 0;
+        ArrayList<int> list = new ArrayList<int>();
+        for(int i = 0; i < inarr.size(); i++) {
+                    for(int j = 0; j < inarr.size(); j++) {
+                        for(int k = 0; k < inarr.size(); k++) {
+                            if(i==j || i==k ||j==k) {
+                                continue;
+                            }
+                            int l = inarr[i] *100 + inarr[j] *10 + inarr[k];
+                            if(l > max){
+                                max = l;
+                            }
+                            if(!list.contains(l)){
+                                list.add(l);
+                            }
+                        }
+                    }
+                }
+    }
+}
