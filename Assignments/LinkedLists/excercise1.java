@@ -13,6 +13,11 @@ import java.util.ListIterator;
 class Tester {
     public static List<Object> concatenateLists(List<Object> listOne, List<Object>listTwo) {
         // code implementation here
+        ListIterator<Object> item = listTwo.listIterator(listTwo.size());
+        while(item.hasPrevious()) {
+            listOne.add(item.previous());
+        }
+        return listOne;
     }
 
     public static void main(String[] args) {
