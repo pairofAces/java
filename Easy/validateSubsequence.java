@@ -12,7 +12,9 @@ class Solution1 {
         while (arrayPointer < array.size() && seqPointer < sequence.size()) {
             // if the the elements at the index positions of each pointer are equal
             // then increment the sequence pointer
-            seqPointer++;
+            if (array.get(arrayPointer).equals(sequence.get(seqPointer))) {
+                seqPointer++;
+            }
         }
     }
 }
