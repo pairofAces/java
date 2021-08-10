@@ -15,7 +15,14 @@ class Solution1 {
             if (array.get(arrayPointer).equals(sequence.get(seqPointer))) {
                 seqPointer++;
             }
+
+            // increment the array pointer
+            arrayPointer++;
         }
+
+        // return the boolean result of checking if seqPointer
+        // is equal to the size of the sequence
+        return seqPointer == sequence.size();
     }
 }
 
