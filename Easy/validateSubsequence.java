@@ -29,6 +29,12 @@ class Solution1 {
 // using for loop
 class Solution2 {
     public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
-        
+        // create variable to represent the sequence index
+        int seqIndex = 0;
+
+        // initiate for loop
+        for (var value : array) {
+            
+        }
     }
 }
