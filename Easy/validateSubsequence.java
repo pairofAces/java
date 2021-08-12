@@ -37,7 +37,14 @@ class Solution2 {
             // (edge case) if the sequence size is equal to seqIndex
             // then break the loop
             if (sequence.size() == seqIndex) {
-                
+                break;
+            }
+
+            // if the element at the index of seqIndex within the sequence is
+            // equal to the value
+                // increment the sequence index
+            if (sequence.get(seqIndex).equals(value)) {
+                seqIndex++;
             }
         }
     }
