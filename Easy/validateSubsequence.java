@@ -47,5 +47,9 @@ class Solution2 {
                 seqIndex++;
             }
         }
+        // return the boolean result
+        // of the check to make sure that the seqIndex is equal
+        // to the size of the sequence
+        return seqIndex == sequence.size();
     }
 }
