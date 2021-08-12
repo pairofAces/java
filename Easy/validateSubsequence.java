@@ -34,7 +34,11 @@ class Solution2 {
 
         // initiate for loop
         for (var value : array) {
-            
+            // (edge case) if the sequence size is equal to seqIndex
+            // then break the loop
+            if (sequence.size() == seqIndex) {
+                
+            }
         }
     }
 }
