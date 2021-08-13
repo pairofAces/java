@@ -21,6 +21,8 @@ class Solution {
             // remove the last digit of the input number by dividing the input by 10
             x /= 10;
         }
-        
+        // if the value of original is equal to the reversed
+            // using original as a comparison b/c the input was modified at line 22
+        return original == reversed;
     }
 }
