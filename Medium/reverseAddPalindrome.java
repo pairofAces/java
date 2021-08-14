@@ -12,4 +12,12 @@ class ReverseAddPalindrome {
         // (3) then, reverse and add the number until the number is a palindrome
 
     // method to reverse the number
+    static int reverseNumber(int num) {
+
+    }
+
+    // method to check if the number is palindrome
+
+
+    // reverse and add number until it's palindrome 
 }
