@@ -19,7 +19,18 @@ class ReverseAddPalindrome {
 
         // create while loop, for as long as the input isn't 0
         while (num != 0) {
-            
+            // remainder will hold the value of the last digit of the input
+            remainder = num % 10;
+
+            // reverse will be the value of itself multiplied by 10, then addedd with
+            // the remainder
+                // reverse is multipled by iteself so that the remainder value can be
+                // put into the correct position of the desired output
+            reverse = (reverse * 10) + remainder;
+
+            // after the last digit of the input is put into the reverse variable,
+            // remove the digit from the original input by divind by 10
+            num = num / 10;
         }
     }
 
