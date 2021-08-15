@@ -13,7 +13,14 @@ class ReverseAddPalindrome {
 
     // method to reverse the number
     static int reverseNumber(int num) {
+        // create variable for to represent the reverse and the remainder
+        int reverse = 0;
+        int remainder = 0;
 
+        // create while loop, for as long as the input isn't 0
+        while (num != 0) {
+            
+        }
     }
 
     // method to check if the number is palindrome
