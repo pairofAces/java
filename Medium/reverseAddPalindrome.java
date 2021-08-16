@@ -38,7 +38,16 @@ class ReverseAddPalindrome {
 
     // method to check if the number is palindrome
     static boolean checkPalindrome(int num) {
-        
+        // use the (reverseNumber) class method to reverse the input and
+        // hold it in a variable
+        int reverse = reverseNumber(num);
+
+        // use if/else logic to compare the reverse to the input number
+        if (reverse == num) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // reverse and add number until it's palindrome 
