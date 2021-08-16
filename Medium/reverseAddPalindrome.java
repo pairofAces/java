@@ -32,10 +32,14 @@ class ReverseAddPalindrome {
             // remove the digit from the original input by divind by 10
             num = num / 10;
         }
+        // return the value of reverse
+        return reverse;
     }
 
     // method to check if the number is palindrome
-
+    static boolean checkPalindrome(int num) {
+        
+    }
 
     // reverse and add number until it's palindrome 
 }
