@@ -51,4 +51,11 @@ class ReverseAddPalindrome {
     }
 
     // reverse and add number until it's palindrome 
+    static void reverseAndAdd(int num) {
+        if (checkPalindrome(num)) {
+
+        } else {
+            
+        }
+    }
 }
