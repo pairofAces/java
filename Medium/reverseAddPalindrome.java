@@ -58,7 +58,16 @@ class ReverseAddPalindrome {
         } else {
             // while the number isn't a palindrome, reverse and add it to itself
             while (!checkPalindrome(num)) {
+                // use the class method, reverse, to reverse the num and hold the value
+                int reverse = reverseNumber(num);
                 
+                // create a variable to hold the variable of sum
+                int sum = num + reverse;
+
+                System.out.println(num+" + "+reverse+" + "+sum);
+
+                // mutate the value of the input to the new value of sum
+                num = sum;
             }
         }
     }
