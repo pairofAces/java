@@ -52,10 +52,14 @@ class ReverseAddPalindrome {
 
     // reverse and add number until it's palindrome 
     static void reverseAndAdd(int num) {
+        // create if/else statement to check if the number is already a palindrome
         if (checkPalindrome(num)) {
-
+            System.out.println("The number is already a palindrome");
         } else {
-            
+            // while the number isn't a palindrome, reverse and add it to itself
+            while (!checkPalindrome(num)) {
+                
+            }
         }
     }
 }
