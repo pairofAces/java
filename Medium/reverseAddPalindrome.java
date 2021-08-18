@@ -71,4 +71,10 @@ class ReverseAddPalindrome {
             }
         }
     }
+
+    public static void main(String[] args) {
+        // create an input for a potential user
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number: ");
+    }
 }
