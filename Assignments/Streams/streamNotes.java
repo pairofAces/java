@@ -9,4 +9,6 @@ stringList.add("Ralph");
 stringList.add("Gabriel");
 
 // sort the list with the inbuilt (sort) method, using lambda function
-stringList.sort()
+    // stringList will be sorted based on the size of the strings
+stringList.sort((str1,str2)->str1.compareTo(str2));
+System.out.println(stringList);
