@@ -77,6 +77,9 @@ class ReverseAddPalindrome {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number: ");
         int inputNum = sc.nextline();
+
+        // invoke the reverseAndAdd class method
+            // which invokes the other 2 class methods within
         reverseAndAdd(inputNum); 
     }
 }
