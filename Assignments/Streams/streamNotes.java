@@ -12,3 +12,12 @@ stringList.add("Gabriel");
     // stringList will be sorted based on the size of the strings
 stringList.sort((str1,str2)->str1.compareTo(str2));
 System.out.println(stringList);
+
+
+// creating a stream from the .stream() method
+List<String> castList = List.of("Dean", "Sam", "Castiel", "Crowley");
+Stream<String> supernatural = castList.stream();
+
+// creating a stream from an array
+Integer[] array = {672, 340, 999};
+Stream<Integer> streamFromArray = Arrays.stream(array);
