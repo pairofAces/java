@@ -40,3 +40,13 @@ class Employee {
 
 // creating the stream
 Stream<Employee> empStream = Stream.of(new Employee("Tom", 5699.5), new Employee("Jack", 7629.2), new Employee("Jane", 5289.8));
+
+// creating a stream of random integers -> to be manipulated by intermediate
+// and terminal methods
+
+Stream<Integer> intStream = Stream.of(17, 10, 15, 5, 2, 4);
+
+// using intermediate methods 
+    // .map()
+    // .filter()
+    // .sort()
