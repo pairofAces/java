@@ -10,6 +10,19 @@ class Solution {
             // initiate switch case, for each of the cases when a 
             // specific letter roman numeral will come
             switch (s.charAt(i)) {
+                case "M":
+
+                case "D":
+
+                case "C":
+
+                case "L":
+
+                case "X":
+
+                case "V":
+
+                case "I":
                 
             }
         }
