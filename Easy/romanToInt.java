@@ -7,7 +7,11 @@ class Solution {
 
         // initiate the for loop
         for (int i = 0; i < s.length(); i++) {
-            
+            // initiate switch case, for each of the cases when a 
+            // specific letter roman numeral will come
+            switch (s.charAt(i)) {
+                
+            }
         }
     }
 }
