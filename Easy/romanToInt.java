@@ -11,9 +11,12 @@ class Solution {
             // specific letter roman numeral will come
             switch (s.charAt(i)) {
                 case "M":
-
+                    // in this case, change the value of the element at the
+                    // (i)th index to 1000
+                    nums[i] = 1000;
+                    break;
                 case "D":
-
+                    
                 case "C":
 
                 case "L":
@@ -23,7 +26,7 @@ class Solution {
                 case "V":
 
                 case "I":
-                
+
             }
         }
     }
