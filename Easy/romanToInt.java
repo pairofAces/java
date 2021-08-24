@@ -39,7 +39,16 @@ class Solution {
         // create a sum variable for reference
         int sum = 0;
         for (int i = 0; i < nums.length - 1; i++) {
-            
+            // if the integer at index i is less than the next integer
+            if (nums[i] < nums[i + 1]) {
+                sum -= nums[i];
+            } else {
+                sum += nums[i]
+            }
         }
+
+        // return the value of the sum plus the final element in the
+        // nums array
+        return sum + nums[nums.length - 1];
     }
 }
