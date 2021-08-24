@@ -35,5 +35,11 @@ class Solution {
                     break;
             }
         }
+
+        // create a sum variable for reference
+        int sum = 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+            
+        }
     }
 }
