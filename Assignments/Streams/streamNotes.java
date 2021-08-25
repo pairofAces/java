@@ -51,4 +51,5 @@ Stream<Integer> intStream = Stream.of(17, 10, 15, 5, 2, 4);
     // .filter()
     // .sort()
 intStream.filter(n -> {System.out.println("Filtering Current Element: " + n); return n % 2 == 0; })
-.map(n -> { System.out.println("Mapping Current Element: " + n); return})bhj m
+.map(n -> { System.out.println("Mapping Current Element: " + n); return})
+
