@@ -7,7 +7,12 @@ import java.util.*;
 
 class Program {
     public static void invertBinaryTree(BinaryTree tree) {
+        ArrayDeque<BinaryTree> queue = new ArrayDeque<BinaryTree>;
+        queue.addLast(tree);
 
+        while (queue.size() > 0) {
+            
+        }
     }
 
     static class BinaryTree {
