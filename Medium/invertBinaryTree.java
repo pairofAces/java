@@ -11,7 +11,7 @@ class Program {
         queue.addLast(tree);
 
         while (queue.size() > 0) {
-            
+            BinaryTree current = queue.pollFirst();
         }
     }
 
