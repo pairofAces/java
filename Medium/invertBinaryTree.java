@@ -19,10 +19,15 @@ class Program {
             // if statement to check if the nodes aren't null
             if (current.left != null) {
 
-            } else {
-                
+            }
+            if (current.right != null){
+
             }
         }
+    }
+
+    public static void swapLeftAndRight(BinaryTree tree) {
+        BinaryTree left = tree.left;
     }
 
     static class BinaryTree {
