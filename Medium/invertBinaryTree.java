@@ -12,6 +12,16 @@ class Program {
 
         while (queue.size() > 0) {
             BinaryTree current = queue.pollFirst();
+
+            // create helper function to swap the nodes
+            swapLeftAndRight(current);
+
+            // if statement to check if the nodes aren't null
+            if (current.left != null) {
+
+            } else {
+                
+            }
         }
     }
 
