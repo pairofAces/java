@@ -18,10 +18,11 @@ class Program {
 
             // if statement to check if the nodes aren't null
             if (current.left != null) {
-
+                // add the left node to the ending of the queue
+                queue.addLast(current.left);
             }
             if (current.right != null){
-
+                queue.addLast(current.right);
             }
         }
     }
