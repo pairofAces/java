@@ -28,6 +28,8 @@ class Program {
 
     public static void swapLeftAndRight(BinaryTree tree) {
         BinaryTree left = tree.left;
+        tree.left = tree.right;
+        tree.right = tree.left;
     }
 
     static class BinaryTree {
