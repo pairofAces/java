@@ -53,4 +53,16 @@ class Solution {
     public static void invertBinaryTree2(BinaryTree tree) {
 
     }
+
+    // create the Binary Tree
+
+    static class BinaryTree {
+        public int value;
+        public BinaryTree left;
+        public BinaryTree right;
+
+        public BinaryTree(int value) {
+            this.value = value;
+        }
+    }
 }
