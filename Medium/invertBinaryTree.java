@@ -3,8 +3,11 @@
 // write a function that takes in a binary tree and inverts it
     // the function should swap every left node for its corresponding right node
 
-import java.util.*;
+import java.util.ArrayDeque;
 
+// Complexity
+    // Time: O(n) time, where (n) is the length of the tree
+    // Space: O(n) space
 class Program {
     public static void invertBinaryTree(BinaryTree tree) {
         ArrayDeque<BinaryTree> queue = new ArrayDeque<BinaryTree>;
@@ -41,5 +44,13 @@ class Program {
         public BinaryTree(int value) {
             this.value = value;
         }
+    }
+}
+
+// Solution 2
+
+class Solution {
+    public static void invertBinaryTree2(BinaryTree tree) {
+
     }
 }
