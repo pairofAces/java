@@ -51,7 +51,17 @@ class Program {
 
 class Solution {
     public static void invertBinaryTree2(BinaryTree tree) {
+        // edge case, what if the tree is null?
+        if (tree == null) {
+            // return empty statement
+            return;
+        }
 
+        // create helper function to swap nodes
+        swapLeftAndRight(tree) // this is the helper function
+
+        // use recursion to invoke the invertBinaryTree2 function
+        
     }
 
     // create the Binary Tree
