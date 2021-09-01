@@ -61,6 +61,12 @@ class Solution {
         swapLeftAndRight(tree) // this is the helper function
 
         // use recursion to invoke the invertBinaryTree2 function
+        invertBinaryTree2(tree.left);
+        invertBinaryTree2(tree.right);
+    }
+
+    // create helper function below
+    public static void swapLeftAndRight (BinaryTree tree) {
         
     }
 
