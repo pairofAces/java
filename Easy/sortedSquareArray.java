@@ -14,6 +14,10 @@ class Program {
             // initially created
             sortedSquareArray[i] = value * value;
         }
-        
+        // sort the (sortedSquares) Array
+        Arrays.sort(sortedSquares);
+
+        // return the sortedSquares array
+        return sortedSquares;
     }
 }
