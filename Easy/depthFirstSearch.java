@@ -21,7 +21,16 @@ class Program {
             // add the (name) into the input array
             array.add(this.name);
 
-            
+            // traverse through the children List, and go through each Node
+            // currently in the list
+            for(int i = 0; i < children.size(); i++) {
+                // get the (i)th element in the children list,
+                // then invoke the depthFirstSearch class method to search through
+                // the child nodes of the (i)th node-element
+                children.get(i).depthFirstSearch(array);
+            }
+            // return the array
+            return array;
         }
     }
 }
