@@ -34,7 +34,15 @@ class Program {
         }
 
         public Node addChild(String name) {
-            
+            // create a reference to a new node created with the
+            // input (name)
+            Node child = new Node(name);
+
+            // add the child created above, into the (children)
+            // List
+            children.add(child);
+
+            return this;
         }
     }
 }
