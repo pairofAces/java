@@ -32,5 +32,9 @@ class Program {
             // return the array
             return array;
         }
+
+        public Node addChild(String name) {
+            
+        }
     }
 }
