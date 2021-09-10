@@ -4,6 +4,14 @@
 
 import java.util.*;
 
+// Complexity Analysis
+    // Time: O(v + e) time, where (v) represents the number of
+    //       vertices and (e) represents the number of edges.
+
+    // Space: O(v) space, where (v) is the size of the List that was
+    //        created
+    
+
 class Program {
     static class Node {
         // initiate a variable to hold a string value
