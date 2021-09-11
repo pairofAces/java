@@ -10,7 +10,15 @@ class Program {
 
         // initiate for loop to traverse the input array
         for(int i = 0; i < array.length; i++) {
-            
+            // create a variable to represent the current element during
+            // the traversal
+            int num = array[i];
+
+            // create an if statement that will use a helper method
+                // helper method will compare the inputs and return a boolean
+            if (isOutOfOrder(i, num, array)) {
+                
+            }
         }
     }
 }
