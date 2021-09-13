@@ -24,6 +24,17 @@ class Program {
             if (minOutOfOrder == Integer.MAX_VALUE) {
                 return new int[] {-1, -1};
             }
+
+            // create an index variable to initiate at 0
+            int subarrayLeftIndex = 0;
+
+            // create a while loop to check if the element at
+            // the index of (subarrayLeftIndex) is less than or
+            // equal to the value of (minOutOfOrder)
+            while (minOutOfOrder >= array[subarrayLeftIndex]) {
+                // increment the left index variable
+                subarrayLeftIndex++;
+            }
         }
     }
 }
