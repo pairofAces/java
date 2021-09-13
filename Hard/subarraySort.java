@@ -35,6 +35,17 @@ class Program {
                 // increment the left index variable
                 subarrayLeftIndex++;
             }
+
+            // create the index variable to start at the ending of the
+            // array
+            int subarrayRightIndex = array.length - 1;
+
+            // create a while loop to check if the element at the index
+            // of (subarrayRightIndex) is greater than or equal to
+            // the value of (maxOutOfOrder)
+            while (maxOutOfOrder >= array[subarrayRightIndex]) {
+                subarrayRightIndex--;
+            }
         }
     }
 }
