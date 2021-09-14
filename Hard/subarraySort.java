@@ -2,6 +2,11 @@
 
 import java.util.*;
 
+// Complexity Analysis
+    // Time: O(n) time, where (n) is the size of the input array
+
+    // Space: O(1) constant space, due to no usage of external data structures
+
 class Program {
     public static int[] subarraySort(int[] array) {
         // create two variables to represent the max and min
