@@ -2,8 +2,8 @@
 
 import java.util.*;
 
-class Program {
-    public int [] sortedSquareArray(int [] array) {
+class sortedSquareArray {
+    public int [] sortSquareArray(int [] array) {
         // create an array of integers to be the same size of the input array
         int [] sortedSquares = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -12,7 +12,7 @@ class Program {
 
             // insert the square of the (value) into the (sortedSquares) array 
             // initially created
-            sortedSquareArray[i] = value * value;
+            sortedSquares[i] = value * value;
         }
         // sort the (sortedSquares) Array
         Arrays.sort(sortedSquares);

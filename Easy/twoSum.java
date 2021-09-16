@@ -6,8 +6,8 @@ import java.util.*;
     // Time: O(n^2) time, where (n) is the length of the array
 
     // Space: O(1), constant time, since no external data structures are being used
-class Solution{
-    public static int[] twoNumberSum(int[] array, int targetSum) {
+class twoNumberSum{
+    public static int[] twoNumbSum(int[] array, int targetSum) {
         // initiate the first for loop to traverse the array
         for (int i = 0; i < array.length - 1; i++) {
             // create a pointer to the first number
@@ -30,8 +30,8 @@ class Solution{
 // Solution 2 - optimized
 // Still using the import java.util.*; statement from above
 
-class Program{
-    public static int[] twoNumberSum(int[] array, int targetSum) {
+class twoNumberSum2{
+    public static int[] twoNumSum(int[] array, int targetSum) {
         // create a new set to act as a hash set that will store the
         // numbers we've tried out
         Set<Integer> nums = new HashSet<>();
@@ -60,7 +60,7 @@ class Program{
     }
 }
 
-class Solution3 {
+class twoNumberSum3 {
     public static int[] twoNumberSum(int[] array, int targetSum) {
         // initially sort the array
         Arrays.sort(array);
@@ -98,6 +98,6 @@ class Solution3 {
             }
         }
         // if the two integers are not found, return 0
-        return new int[0]
+        return new int[0];
     }
 }
