@@ -1,12 +1,12 @@
 // Two Sum 
 
-import java.util;
+import java.util.*;
 
 // Solution 1, brute force
     // Time: O(n^2) time, where (n) is the length of the array
 
     // Space: O(1), constant time, since no external data structures are being used
-class Program{
+class Solution{
     public static int[] twoNumberSum(int[] array, int targetSum) {
         // initiate the first for loop to traverse the array
         for (int i = 0; i < array.length - 1; i++) {

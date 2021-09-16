@@ -5,7 +5,7 @@ class Solution {
         if (x < 0) return false;
 
         // create comparison variables
-        int reversed = 0, remainder, original = num;
+        int reversed = 0, remainder, original = x;
 
         // initiate while loop for as long as the input isn't 0
         while (x != 0) {

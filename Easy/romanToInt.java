@@ -1,7 +1,9 @@
 // Roman numeral to integer
 
-class Solution {
-    public int romanToInt(String s) {
+import java.util.*;
+
+class romanToInt {
+    public int romToInt(String s) {
         // create refernce array
         int nums[] = new int[s.length()];
 
@@ -10,27 +12,27 @@ class Solution {
             // initiate switch case, for each of the cases when a 
             // specific letter roman numeral will come
             switch (s.charAt(i)) {
-                case "M":
+                case 'M':
                     // in this case, change the value of the element at the
                     // (i)th index to 1000
                     nums[i] = 1000;
                     break;
-                case "D":
+                case 'D':
                     nums[i] = 500;
                     break;
-                case "C":
+                case 'C':
                     nums[i] = 100;
                     break;
-                case "L":
+                case 'L':
                     nums[i] = 50;
                     break;
-                case "X":
+                case 'X':
                     nums[i] = 10;
                     break;
-                case "V":
+                case 'V':
                     nums[i] = 5;
                     break;
-                case "I":
+                case 'I':
                     nums[i] = 1;
                     break;
             }
@@ -43,7 +45,7 @@ class Solution {
             if (nums[i] < nums[i + 1]) {
                 sum -= nums[i];
             } else {
-                sum += nums[i]
+                sum += nums[i];
             }
         }
 

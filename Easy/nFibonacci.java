@@ -1,4 +1,6 @@
-public class nFibonacci {
+import java.util.*;
+
+public class nFibonacci{
     public static int getNthFib(int n) {
         // edge case if the input is 2
         if (n == 2) {
@@ -12,3 +14,4 @@ public class nFibonacci {
         }
     }
 }
+
