@@ -51,20 +51,39 @@ class nFibonacci2 {
     }
 }
 
+// Complexity
+    // Time: O(n) time, where (n) is the size of the input integer
 
+    // Space: O(1) constant space since no external data structures are
+    //        being utilized
 
 class nFibonacci3 {
     public static int getNthFib(int x) {
+        // create an array of the first two numbers, which should be 0 and 1
         int [] lastTwo = {0, 1};
+
+        // create a (counter) variable initialized at 3
         int counter = 3;
 
+        // initiate while loop as long the the (counter) variable is less than
+        // or equal to the input (x)
         while (counter <= x) {
+            // create a variable to represent the sum of the elements in 
+            // the (lastTwo) array initially created
             int nextFib = lastTwo[0] + lastTwo[1];
+
+            // change the value of the first element in (lastTwo) to the second,
+            // and change the second element to the value of (nextFib)
             lastTwo[0] = lastTwo[1];
             lastTwo[1] = nextFib;
+
+            // increment the counter variable
             counter++;
         }
 
-        return n > 1 ? lastTwo[1] : lastTwo[0];
+        // create a ternary expression to show the first/second element
+        // in (lastTwo) depending on the condition if the input
+        // integer is greater than 1 
+        return x > 1 ? lastTwo[1] : lastTwo[0];
     }
 }
