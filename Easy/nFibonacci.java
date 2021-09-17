@@ -50,3 +50,21 @@ class nFibonacci2 {
         }
     }
 }
+
+
+
+class nFibonacci3 {
+    public static int getNthFib(int x) {
+        int [] lastTwo = {0, 1};
+        int counter = 3;
+
+        while (counter <= x) {
+            int nextFib = lastTwo[0] + lastTwo[1];
+            lastTwo[0] = lastTwo[1];
+            lastTwo[1] = nextFib;
+            counter++;
+        }
+
+        return n > 1 ? lastTwo[1] : lastTwo[0];
+    }
+}
