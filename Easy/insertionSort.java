@@ -1,3 +1,11 @@
+// Complexity Analysis
+    // Time: 
+        // - Best case: O(n) time, where (n) is the size of the input array
+        // - Average case: O(n^2) time
+        // - Worst case: O(n^2) time
+
+    // Space: O(1) constant time
+    
 public class insertionSort {
     public static int [] insertSort(int[] array) {
         if(array.length == 0) {
