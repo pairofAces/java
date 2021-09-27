@@ -14,10 +14,15 @@ public class binaryTreeDiameter {
         }
 
         // recursively invoke the method to the left and right children
-        TreeInfo lefttTreeInfo = getTreeInfo(tree.left);
-        TreeInfo righttTreeInfo = getTreeInfo(tree.right);
+        TreeInfo leftTreeInfo = getTreeInfo(tree.left);
+        TreeInfo rightTreeInfo = getTreeInfo(tree.right);
 
-        
+        int longestPathToTreeRoot = leftTreeInfo.height + rightTreeInfo.height;
+        int maxDiameterSoFar = Math.max(leftTreeInfo.diameter, rightTreeInfo.diameter);
+        int currentDiameter = Math.max(longestPathToTreeRoot, maxDiameterSoFar);
+        int currentHeight = 1 + Math.max(leftTreeInfo.height, rightTreeInfo.height);
+
+        return new TreeInfo(currentDiameter, currentHeight);
 
     }
     
@@ -30,7 +35,15 @@ public class binaryTreeDiameter {
         public BinaryTree(int value) {
             this.value = value;
         }
+    }
 
+    static class TreeInfo {
+        public int diameter;
+        public int height;
 
+        public TreeInfo(int diameter, int height) {
+            this.diameter = diameter;
+            this.height = height;
+        }
     }
 }
