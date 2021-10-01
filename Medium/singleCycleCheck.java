@@ -1,5 +1,12 @@
 import jdk.internal.org.jline.terminal.impl.CursorSupport;
 
+
+// Complexity Analysis
+    // Time: O(n) time, where (n) is the length of the array
+
+    // Space: O(1) constant space, since no external data structures are
+    // being utilized
+    
 public class singleCycleCheck {
     public static boolean hasSingleCycle(int[] array) {
         int numElementsVisited = 0;
