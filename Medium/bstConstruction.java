@@ -1,5 +1,5 @@
 class Program {
-    public static BST {
+    static class BST {
         public int value;
         public BST left;
         public BST right;
