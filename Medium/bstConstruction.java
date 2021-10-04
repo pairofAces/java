@@ -11,7 +11,20 @@ class Program {
 
     // create BST insert method
     public BST insert (int value) {
+        // if the input value is less than the initial value from the constructor
+        if (value < this.value) {
+            if (left == null) {
 
+            } else {
+
+            }
+        } else {
+            if (right == null) {
+
+            } else {
+                
+            }
+        }
     }
 
     // create a boolean contains method
