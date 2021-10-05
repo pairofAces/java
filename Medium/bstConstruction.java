@@ -14,15 +14,17 @@ class Program {
         // if the input value is less than the initial value from the constructor
         if (value < this.value) {
             if (left == null) {
-
+                BST newBst = new BST(int value);
+                left = newBst;
             } else {
-
+                left.insert(value);
             }
         } else {
             if (right == null) {
-
+                BST newBst = new BST(int value);
+                right = newBst;
             } else {
-                
+                right.insert(value);
             }
         }
     }
