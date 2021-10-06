@@ -14,24 +14,40 @@ class Program {
         // if the input value is less than the initial value from the constructor
         if (value < this.value) {
             if (left == null) {
-                BST newBst = new BST(int value);
+                BST newBst = new BST(value);
                 left = newBst;
             } else {
                 left.insert(value);
             }
         } else {
             if (right == null) {
-                BST newBst = new BST(int value);
+                BST newBst = new BST(value);
                 right = newBst;
             } else {
                 right.insert(value);
             }
         }
+
+        return this;
     }
 
     // create a boolean contains method
     public boolean contains(int value) {
-
+        if (value < this.value) {
+            if (left == null) {
+                return false;
+            } else {
+                return left.contains(value);
+            }
+        } else if (value > this.value) {
+            if (right == null) {
+                return false;
+            } else {
+                return right.contains(value);
+            }
+        } else {
+            return true;
+        }
     }
 
     // create BST remove method
