@@ -52,6 +52,11 @@ class Program {
 
     // create BST remove method
     public BST remove(int value, BST parent) {
+        remove(value, null);
+        return this;
+    }
+
+    public void remove(int value, BST parent) {
 
     }
 
