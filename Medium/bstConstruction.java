@@ -57,7 +57,13 @@ class Program {
     }
 
     public void remove(int value, BST parent) {
+        if (value < this.value) {
 
+        } else if (value > this.value) {
+
+        } else {
+            
+        }
     }
 
     // create a method to get the min value
