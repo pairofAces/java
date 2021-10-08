@@ -58,11 +58,15 @@ class Program {
 
     public void remove(int value, BST parent) {
         if (value < this.value) {
-
+            if (left != null) {
+                left.remove(value);
+            }
         } else if (value > this.value) {
-
+            if (right != null) {
+                right.remove(value);
+            }
         } else {
-            
+
         }
     }
 
