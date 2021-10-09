@@ -67,13 +67,25 @@ class Program {
             }
         } else {
             if (left != null && right != null) {
-
+                this.value = right.getMinVal();
+                right.remove(this.value, this);
             } else if (parent == null) {
-
+                if (left != null) {
+                    this.value = left.value;
+                    right = left.right;
+                    left = left.left;
+                } else if (right != null) {
+                    this.value = right.value;
+                    left = right.left;
+                    right = right.right;
+                } else {
+                    // in this case, the tree only has a single node.
+                    // therefore, do nothing -> blank statement
+                }
             } else if (parent.left == this) {
-                
+                parent.left = left != null ? left : right;
             } else if (parent.right == this) {
-                
+                parent.right = left != null ? left : right;
             }
         }
     }
