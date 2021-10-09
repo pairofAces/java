@@ -66,7 +66,15 @@ class Program {
                 right.remove(value);
             }
         } else {
+            if (left != null && right != null) {
 
+            } else if (parent == null) {
+
+            } else if (parent.left == this) {
+                
+            } else if (parent.right == this) {
+                
+            }
         }
     }
 
