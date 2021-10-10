@@ -92,6 +92,10 @@ class Program {
 
     // create a method to get the min value
     public int getMinVal() {
-
+        if (left == null) {
+            return this.value;
+        } else {
+            return left.getMinVal();
+        }
     }
 }
