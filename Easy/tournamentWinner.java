@@ -5,11 +5,22 @@ class Program1 {
 
     public String tournamentWinner(ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
         String currentBest = "";
-        // logic
-
+        
         // create hashmap to store scores
         HashMap<String, Integer> scores = new HashMap<String, Integer>();
         scores.put(currentBest, 0);
+        
+        // logic
+        for (int idx = 0; idx < competitions.size(); idx++) {
+            ArrayList<String> competition = competitions.get(idx);
+            int result = results.get(idx);
+
+            String homeTeam = competition.get(0);
+            String awayTeam = competition.get(1);
+
+            
+
+        }
 
         return currentBest;
     }
