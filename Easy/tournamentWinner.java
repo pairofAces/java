@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Program1 {
     public int HOME_TEAM_WON = 1;
 
     public String tournamentWinner(ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
@@ -10,7 +10,7 @@ class Program {
         // create hashmap to store scores
         HashMap<String, Integer> scores = new HashMap<String, Integer>();
         scores.put(currentBest, 0);
-        
+
         return currentBest;
     }
 }
