@@ -18,10 +18,15 @@ class Program1 {
             String homeTeam = competition.get(0);
             String awayTeam = competition.get(1);
 
-            
+            String winningTeam = (result == HOME_TEAM_WON) ? homeTeam : awayTeam;
+
+            // helper method
+            updateScores(winningTeam, 3, scores);
 
         }
 
         return currentBest;
     }
+
+    // create helper function
 }
