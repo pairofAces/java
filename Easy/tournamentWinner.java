@@ -29,4 +29,11 @@ class Program1 {
     }
 
     // create helper function
+    public void updateScores(String team, int points, HashMap<String, Integer> scores) {
+        if (!scores.containsKey(team)) {
+            scores.put(team, 0);
+        }
+
+        scores.put(team, scores.get(team) + points);
+    }
 }
