@@ -14,6 +14,11 @@ public class threeNumberSum {
 
             while (left < right) {
                 // create logic
+                int currentSum = array[i] + array[left] + array[right];
+                if (currentSum == targetSum) {
+                    Integer[] newTriplet = {array[i], array[left], array[right]};
+                    
+                }
             }
         }
     }
