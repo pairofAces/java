@@ -17,6 +17,13 @@ public class threeNumberSum {
                 int currentSum = array[i] + array[left] + array[right];
                 if (currentSum == targetSum) {
                     Integer[] newTriplet = {array[i], array[left], array[right]};
+                    triplets.add(newTriplet);
+                    left++;
+                    right--;
+
+                } else if (currentSum < targetSum) {
+
+                } else if (currentSum > targetSum) {
                     
                 }
             }
